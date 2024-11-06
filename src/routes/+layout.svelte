@@ -1,8 +1,9 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
+	const { children } = $props();
+	export const prerender = true;
 </script>
 
-<div class="flex flex-col justify-center ">
+<div class="flex flex-col justify-center">
 {@render children()}
 </div>
